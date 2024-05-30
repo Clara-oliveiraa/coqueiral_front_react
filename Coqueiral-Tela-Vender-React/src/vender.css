@@ -1,0 +1,345 @@
+/* Vender_etica.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+/* Importe o CSS do Font Awesome */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Seção Ética */
+#etica {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+padding: 20px;
+}
+
+/* Container para layout responsivo */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Imagem */
+.imagem {
+  width: 505px;
+  height: 527px;
+  overflow: hidden;
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto */
+.texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.texto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto {
+    order: 1;
+  }
+}
+
+
+body {
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+.App {
+  text-align: center;
+  padding-top: 0; /* Remove o padding superior do App */
+}
+
+.banner {
+  background-color: #303D4D;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.7rem;
+  padding: 10px 0;
+  
+  margin-bottom: 20px; /* Adiciona margem inferior ao banner */
+  text-align: center;
+  position: fixed; /* Fixar o banner na parte superior */
+  top: 0; /* Posicionar o banner no topo da tela */
+  left: 0; /* Posicionar o banner na borda esquerda */
+  width: 100%; /* Ocupar toda a largura da tela */
+  z-index: 1000; /* Garantir que o banner esteja acima de outros elementos */
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  background-color: #ffffff;
+  width: 60%;
+  max-width: 800px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+.search-bar::placeholder {
+  color: #999999;
+}
+
+.search-button {
+  background-color: #f8f8f8;
+  border: none;
+  color: #999999;
+  padding: 10px 20px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button i {
+  font-size: 1rem;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.main-title {
+  color: #303D4D;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.info-text {
+  color: #838383;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 1REM;
+  margin-right: 1REM;
+}
+
+.info-text .highlight {
+  color: #303D4D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 800px;
+  background-color: #f8f8f8;
+}
+
+.email-input,
+.question-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.question-input {
+  height: 100px;
+  resize: none;
+}
+
+.send-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #838383;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+.send-button:hover {
+  background-color: #6c6c6c;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  margin-top: 20px;
+}
+
+.footer-text {
+  color: #838383;
+  margin: 5px 0;
+}
+
+.footer-email {
+  color: #cccccc;
+  margin: 5px 0;
+}
+
+.search-icon {
+  position: absolute; /* Posicione o ícone ao lado do input */
+  top: 50%; /* Centralize verticalmente */
+  transform: translateY(-50%); /* Compense a metade da altura do ícone */
+  right: 15px; /* Adicione espaçamento à direita do input */
+  font-size: 1.2em; /* Ajuste o tamanho do ícone */
+  color: #333333; /* Defina a cor do ícone */
+}
+
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .search-bar-container {
+    width: 90%;
+  }
+
+  .search-bar {
+    font-size: 0.9rem;
+  }
+
+  .info-text {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .email-input,
+  .question-input,
+  .send-button {
+    font-size: 0.9rem;
+  }
+
+  .footer-text,
+  .footer-email {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .App {
+    padding-top: 0px;
+  }
+
+  .banner {
+    padding: 15px 0;
+    font-size: 1.2rem;
+  }
+
+  .search-bar-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .search-bar {
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+
+  .search-button {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  .info-text {
+    font-size: 0.9rem;
+    margin: 10px 20px;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .email-input,
+  .question-input {
+    margin: 10px 0;
+    font-size: 0.9rem;
+  }
+
+  .send-button {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer-text,
+  .footer-email {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-icon {
+    font-size: 1em; /* Reduza o tamanho do ícone em telas menores */
+    right: 10px; /* Ajuste o espaçamento à direita em telas menores */
+  }
+}
